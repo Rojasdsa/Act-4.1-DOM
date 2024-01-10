@@ -2,10 +2,10 @@
 
 document.addEventListener("DOMContentLoaded", function () {
     // Selecciona el enlace
-    const enlace = document.querySelector('a[data-tipo="enlace"]');
+    const enlace = document.querySelector('a');
 
     // Verifica si tiene el atributo target
-    if (enlace && enlace.hasAttribute("target")) {
+    if (enlace.hasAttribute("target")) {
         // Imprime el valor del atributo target en la consola
         console.log("Valor del atributo target:", enlace.getAttribute("target"));
     } else {

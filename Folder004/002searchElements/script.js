@@ -1,19 +1,25 @@
 'use strict'
 
-document.addEventListener("DOMContentLoaded", function () {
-    // Selecciona el enlace
-    const enlace = document.querySelector('a');
+// 1. Tabla con id="age-table"
+console.log(document.getElementById('age-table'));
 
-    // Verifica si tiene el atributo target
-    if (enlace.hasAttribute("target")) {
-        // Imprime el valor del atributo target en la consola
-        console.log("Valor del atributo target:", enlace.getAttribute("target"));
-    } else {
-        // Imprime un mensaje si el atributo target no está presente
-        console.log("El atributo target no está presente");
-    }
-});
+// 2. Todos los elementos label dentro de la tabla
+console.log(document.querySelectorAll('table label'));
+
+// 3. El primer td en la tabla (con la palabra "age")
+console.log([...document.querySelectorAll('table td')].find(td => td.innerText.includes('Age')));
+
+// 4. El formulario con name="search"
+console.log(document.forms['search']);
+
+// 5. El primer input en ese formulario
+console.log(document.forms['search'].querySelector('input'));
+
+// 6. El último input en ese formulario
+console.log(document.forms['search'].querySelectorAll('input')[document.forms['search'].getElementsByTagName('input').length-1]);
+
 
 /*
- No tiene atributo "target" así que mostrará el mensaje del else.
+ Imagen adjunta que certifica las busquedas en consola.
 */
+

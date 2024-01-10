@@ -18,6 +18,5 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 /*
- Aunque usa getAttribute() y llama a 'data-tipo', el atributo que 
-muestra en la consola es 'nuevo-parrafo' así que se ha modificado.
+ Se ha sustituido correctamente el data-tipo parrafo con nuevo-parrafo.
 */

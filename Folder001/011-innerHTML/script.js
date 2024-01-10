@@ -11,12 +11,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
 /* innerHTML
 ------------------------
- representa el contenido HTML contenido dentro del elemento.
+ Representa el contenido HTML contenido dentro del elemento.
 */
 
 /* outerHTML
 ------------------------
- representa el contenido HTML del elemento incluyendo 
+ Representa el contenido HTML del elemento incluyendo 
 la etiqueta en sí.
 */
 

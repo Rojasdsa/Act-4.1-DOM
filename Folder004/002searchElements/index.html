@@ -1,0 +1,96 @@
+<!-- 
+002-Aquí está el documento con la tabla y el formulario.
+
+¿Cómo encontrar?…
+
+La tabla con id="age-table".
+
+...Todos los elementos label dentro de la tabla (debería haber 3).
+
+El primer td en la tabla (con la palabra “age”).
+
+El form con name="search".
+
+El primer input en ese formulario.
+
+El último input en ese formulario.
+
+Abra la página index.html en una ventana separada y haga uso de 
+las herramientas del navegador.  
+ -->
+
+<html>
+
+<head>
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+
+  <form name="search">
+
+    <label>Buscar en la página:
+
+      <input type="text" name="search">
+
+    </label>
+
+    <input type="submit" value="Search!">
+
+  </form>
+
+  <hr>
+
+  <form name="search-person">
+
+    Buscar a los visitantes:
+
+    <table id="age-table">
+
+      <tr>
+
+        <td>Age:</td>
+
+        <td id="age-list">
+
+          <label>
+
+            <input type="radio" name="age" value="young">younger than 18</label>
+
+          <label>
+
+            <input type="radio" name="age" value="mature"> 18-50</label>
+
+          <label>
+
+            <input type="radio" name="age" value="senior">older than 50</label>
+
+        </td>
+
+      </tr>
+
+      <tr>
+
+        <td>More:</td>
+
+        <td>
+
+          <input type="text" name="info[0]">
+
+          <input type="text" name="info[1]">
+
+          <input type="text" name="info[2]">
+
+        </td>
+
+      </tr>
+
+    </table>
+
+    <input type="submit" value="Search!">
+
+  </form>
+
+</body>
+
+</html>
